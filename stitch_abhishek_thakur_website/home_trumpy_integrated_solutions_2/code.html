@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRUMPY | Premium Beverage Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "outline": "#81756e",
+                "tertiary": "#301100",
+                "surface-container": "#f1ede8",
+                "surface-container-highest": "#e6e2dd",
+                "on-surface": "#1c1c19",
+                "surface-container-low": "#f7f3ee",
+                "surface-dim": "#ddd9d5",
+                "on-tertiary-fixed-variant": "#753401",
+                "on-background": "#1c1c19",
+                "inverse-surface": "#31302d",
+                "surface-tint": "#705a4c",
+                "primary-fixed-dim": "#dec1af",
+                "on-surface-variant": "#4f453f",
+                "on-primary-fixed": "#28180d",
+                "secondary": "#ab3600",
+                "tertiary-container": "#502100",
+                "inverse-primary": "#dec1af",
+                "surface-container-high": "#ebe8e3",
+                "secondary-fixed-dim": "#ffb59c",
+                "primary": "#26170c",
+                "outline-variant": "#d2c4bc",
+                "on-tertiary-fixed": "#321200",
+                "on-tertiary": "#ffffff",
+                "on-error": "#ffffff",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed-variant": "#822700",
+                "on-secondary": "#ffffff",
+                "surface-bright": "#fdf9f4",
+                "secondary-container": "#fd6b34",
+                "on-secondary-container": "#5d1900",
+                "on-error-container": "#93000a",
+                "on-tertiary-container": "#d7814b",
+                "on-primary-container": "#ac9181",
+                "on-primary": "#ffffff",
+                "secondary-fixed": "#ffdbcf",
+                "error": "#ba1a1a",
+                "tertiary-fixed": "#ffdbc9",
+                "tertiary-fixed-dim": "#ffb68c",
+                "surface-variant": "#e6e2dd",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#fdf9f4",
+                "on-primary-fixed-variant": "#574335",
+                "inverse-on-surface": "#f4f0eb",
+                "background": "#fdf9f4",
+                "primary-fixed": "#fbddca",
+                "primary-container": "#3d2b1f",
+                "on-secondary-fixed": "#390c00"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "unit": "8px",
+                "margin-mobile": "20px",
+                "container-max": "1280px"
+            },
+            "fontFamily": {
+                "headline-sm": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"],
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Montserrat"],
+                "label-caps": ["Montserrat"],
+                "headline-md": ["Playfair Display"],
+                "body-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .texture-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(38, 23, 12, 0.9) 0%, rgba(38, 23, 12, 0.4) 50%, rgba(38, 23, 12, 0) 100%);
+        }
+        .glass-card {
+            background: rgba(253, 249, 244, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .transition-slow { transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<div class="fixed inset-0 texture-overlay z-[60]"></div>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm font-bold text-primary dark:text-primary-fixed tracking-tight">TRUMPY</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-body-md text-label-caps uppercase tracking-widest text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Home</a>
+<a class="font-body-md text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Services</a>
+<a class="font-body-md text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Brand Story</a>
+<a class="font-body-md text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Partnership</a>
+</div>
+<button class="bg-secondary-container hover:bg-secondary text-on-secondary-container hover:text-on-secondary px-8 py-3 font-body-md font-bold transition-all duration-300 rounded-none uppercase tracking-widest text-xs">
+                Order Reserve
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[100vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A luxurious lifestyle scene at sunset featuring amber-colored glass spirit bottles arranged elegantly on a textured stone table overlooking a hazy coastline. The lighting is warm and golden, casting soft shadows. The overall aesthetic is sophisticated, premium, and calm, with a deep espresso brown and warm parchment color palette reflecting artisanal quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAM6wlk6tj0ivgwYaxjs5tFd9l_7CnrwJ1ZbYl62PAT6mxXuKGQBFldXLGqD7kO9_8K9uYmbHs5M3keBDDBeK6mmMxtdb5tMJvIEk3jCEfi9dsd59KEQO9R26Btwfjr35kbP86Pw4mxbEyJdbsZTInQ70Z5_c-AUEHprXe028rPoEI0ZEmWa8d4ph4ZgrRHyfWpIJhBcirFHEZAwahHp9BN5WTV40193uGPI0xYBYKE6jtGYHCo-14')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full pt-20">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-[0.3em] block mb-6">Heritage Artisanal Reserve</span>
+<h1 class="font-display-lg text-display-lg text-surface-bright mb-8 leading-[1.1]">
+                    One Stop Solution from Formulation to Distribution
+                </h1>
+<p class="font-body-lg text-body-lg text-surface-container-highest mb-10 max-w-lg opacity-90">
+                    Crafting excellence at every stage. From the initial spark of an idea to global shelf presence, we redefine the journey of luxury spirits.
+                </p>
+<div class="flex gap-6">
+<button class="bg-secondary text-white px-10 py-5 font-bold uppercase tracking-widest text-xs hover:bg-primary transition-colors">Start Your Journey</button>
+<button class="border border-surface-bright text-surface-bright px-10 py-5 font-bold uppercase tracking-widest text-xs hover:bg-surface-bright hover:text-primary transition-all">Our Portfolio</button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-surface-bright/50 animate-bounce">
+<span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
+</div>
+</header>
+<!-- Expertise Bento Grid -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Our Expertise</h2>
+<div class="h-1 w-20 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Big Item: Manufacturing -->
+<div class="md:col-span-8 group relative overflow-hidden h-[600px] border border-outline-variant">
+<div class="w-full h-full bg-cover bg-center transition-slow group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLs0XXb4enkWcHaw5bKo4sgxvUFy1aJuVAXXuv1TeGoY7Z76DlbY9gwk0vnRU1DYz0koVYTVNf__gprXZnpstxyIoU89hBfcvtYKqRLeL900_NEawa2ujIIQKt2jCyDt9jC0kYFQUeq9NQbz_BersuyouBjPmHuzXbImZRunZg--3QR1WSH87JaXfPfDhLNvH-_UnOfNw1QXEtI08rVpeghXFueO2htkKYJS28C7dbhXyWOGz11HlbVhNg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 p-12">
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mb-4">State-of-the-Art Manufacturing</h3>
+<p class="text-surface-container-highest max-w-md opacity-80 mb-6">Our facilities merge traditional wisdom with modern industrial precision to guarantee consistency in every drop.</p>
+<a class="inline-flex items-center text-secondary-fixed-dim font-bold tracking-widest text-xs uppercase group" href="#">
+                        Explore Facility <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Side Item 1: Formulation -->
+<div class="md:col-span-4 group relative overflow-hidden h-[600px] border border-outline-variant">
+<div class="w-full h-full bg-cover bg-center transition-slow group-hover:scale-105" data-alt="A clean, minimalist laboratory setting featuring glass beakers, test tubes, and botanical ingredients like juniper berries and dried orange peel on a white marble surface. The lighting is clinical yet artistic, with high-end photographic clarity. Sophisticated color grading with espresso and parchment tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA89HPNTEx8IfO0NWL5sgmV1ObW_NXN6hrZ8J3fZlvmrEgyz2bXgnllcqhc0urTpFebmgZG-eg1U2aCwev_lTxkwCqGhBA26_7noIdxO-4A7ASuQbwWdoHD47qQEo6AgR-fESNKPoUYsKF_9JtDN1tDM7RVtW9dSF7bSw8njmD5jYwEXDRd84OaK0B-iTBDKlhClUgn9vpMsL1digiHHrITihws9QAvY1Ex9MeCkffQ1M_2-e7ZjEo')"></div>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/40 transition-all"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-10 bg-gradient-to-t from-primary/80 to-transparent">
+<h3 class="font-headline-sm text-headline-sm text-surface-bright mb-2">Advanced Formulation</h3>
+<p class="text-surface-container-highest text-sm opacity-70 mb-4">Master blenders and food scientists working in harmony to craft unique flavor profiles.</p>
+</div>
+</div>
+<!-- Bottom Item: Distribution -->
+<div class="md:col-span-12 group relative h-[300px] border border-outline-variant bg-surface-container flex items-center overflow-hidden">
+<div class="w-full md:w-1/2 p-12 relative z-10">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Global Distribution</h3>
+<p class="text-on-surface-variant max-w-lg mb-4">Navigating complex international regulations to deliver premium spirits to enthusiasts worldwide.</p>
+</div>
+<div class="hidden md:block absolute right-0 top-0 bottom-0 w-2/3 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[300px] absolute right-10 top-1/2 -translate-y-1/2">public</span>
+</div>
+<div class="absolute right-20 top-1/2 -translate-y-1/2 flex gap-4">
+<div class="w-12 h-12 rounded-full border border-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+</div>
+<div class="w-12 h-12 rounded-full border border-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">inventory_2</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trumpy Story -->
+<section class="py-32 bg-surface-container-low relative overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 border-l-4 border-t-4 border-secondary/20"></div>
+<div class="relative h-[600px] border-4 border-surface shadow-2xl">
+<img alt="Trumpy the companion" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtuWQ2oaBhFXWT4JewAlnq80DFF0Zs8dC2xyZN2QHCch4oDFFBB_IXkbgPUJDOsSel26_NwUV_B70a9coBSx_xYOd-ukITcrJR_ZiTw7IDa-rppr6vAkO4JICAF7mSfyHdDekoH9R8eON35--JXJ5vopUX6eDeyyLts9UJ9V4yCULNDNfp0QEJVXNUolpMPCp9BOF_qwSffwbopwdAeDPZpHh-S07Kr0xLETSa5tcbGCOyDakCAInDx"/>
+</div>
+<div class="absolute -bottom-6 -right-6 glass-card p-8 border border-outline-variant/30">
+<p class="font-headline-sm text-secondary">The Original Companion</p>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em] block mb-6">Our Legacy</span>
+<h2 class="font-display-lg text-headline-md text-primary mb-8 leading-tight">The Trumpy Story: <br/>Loyalty, Heritage, Vision.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Named after our founding companion, TRUMPY embodies the same resilience, loyalty, and spirited nature found in the noble Indian Pariah. Like our namesake, we are rooted in the rich soil of India while possessing a vision that knows no borders.
+                    </p>
+<div class="space-y-6 italic font-headline-sm text-primary/80 border-l-2 border-secondary pl-8">
+                        "By India, From India, To World."
+                    </div>
+<p class="mt-8 font-body-md text-on-surface-variant opacity-80">
+                        We don't just export products; we export the essence of Indian craftsmanship and the uncompromising standard of modern luxury to every corner of the globe.
+                    </p>
+<button class="mt-12 group flex items-center font-bold uppercase tracking-widest text-xs text-primary transition-all">
+                        Discover Our Full Story
+                        <div class="ml-4 w-12 h-[1px] bg-secondary transition-all group-hover:w-20"></div>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 bg-primary text-surface-bright">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter text-center">
+<div class="p-10 border border-surface-bright/10 hover:border-surface-bright/30 transition-colors">
+<div class="font-display-lg text-display-lg-mobile text-secondary-fixed mb-2">24+</div>
+<div class="font-label-caps text-label-caps uppercase tracking-widest opacity-60">Countries Reached</div>
+</div>
+<div class="p-10 border border-surface-bright/10 hover:border-surface-bright/30 transition-colors">
+<div class="font-display-lg text-display-lg-mobile text-secondary-fixed mb-2">150+</div>
+<div class="font-label-caps text-label-caps uppercase tracking-widest opacity-60">Luxury Outlets</div>
+</div>
+<div class="p-10 border border-surface-bright/10 hover:border-surface-bright/30 transition-colors">
+<div class="font-display-lg text-display-lg-mobile text-secondary-fixed mb-2">08+</div>
+<div class="font-label-caps text-label-caps uppercase tracking-widest opacity-60">Global Awards</div>
+</div>
+<div class="p-10 border border-surface-bright/10 hover:border-surface-bright/30 transition-colors">
+<div class="font-display-lg text-display-lg-mobile text-secondary-fixed mb-2">100%</div>
+<div class="font-label-caps text-label-caps uppercase tracking-widest opacity-60">Purity Standard</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnership CTA -->
+<section class="py-40 bg-surface relative">
+<div class="absolute inset-0 opacity-[0.03] pattern-grid"></div>
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">Partner with TRUMPY</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                    Whether you are an established brand seeking scale or a visionary starting from scratch, we offer the technical prowess and distribution network to make your mark.
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<a class="inline-block bg-primary text-white px-12 py-6 font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-all" href="mailto:partner@trumpy.com">Start a Conversation</a>
+<a class="inline-block border border-primary text-primary px-12 py-6 font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-white transition-all" href="#">Download Brochure</a>
+</div>
+<div class="mt-20 flex justify-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all">
+<!-- Brand Accents -->
+<span class="material-symbols-outlined text-4xl">verified</span>
+<span class="material-symbols-outlined text-4xl">eco</span>
+<span class="material-symbols-outlined text-4xl">precision_manufacturing</span>
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-4">
+<div class="font-display-lg text-headline-md text-on-primary mb-6">TRUMPY</div>
+<p class="text-on-primary/70 font-body-md mb-8 max-w-xs">
+                    Redefining the standards of food and beverage through heritage, innovation, and global vision.
+                </p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-bold text-on-primary mb-6 uppercase text-xs tracking-widest">Solutions</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-sm" href="#">Formulation</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-sm" href="#">Manufacturing</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-sm" href="#">Distribution</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-bold text-on-primary mb-6 uppercase text-xs tracking-widest">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-sm" href="#">Brand Story</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-sm" href="#">Partnership</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-sm" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-bold text-on-primary mb-6 uppercase text-xs tracking-widest">Stay Connected</h4>
+<div class="flex border-b border-on-primary/20 pb-2 mb-6">
+<input class="bg-transparent border-none focus:ring-0 text-on-primary placeholder:text-on-primary/40 w-full text-sm" placeholder="Email Address" type="email"/>
+<button class="text-on-primary hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="flex gap-4">
+<a class="text-on-primary/50 hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-primary/50 hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</div>
+<div class="mt-20 border-t border-outline-variant/20 pt-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-body-md text-sm text-on-primary/50">
+                © 2024 TRUMPY FOOD AND BEVERAGES PRIVATE LIMITED. All rights reserved.
+            </div>
+<div class="flex gap-8">
+<a class="text-on-primary/50 hover:text-on-primary transition-colors text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-on-primary/50 hover:text-on-primary transition-colors text-xs uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-on-primary/50 hover:text-on-primary transition-colors text-xs uppercase tracking-widest" href="#">Compliance</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and Scroll effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            // Add scroll-in animations to sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>

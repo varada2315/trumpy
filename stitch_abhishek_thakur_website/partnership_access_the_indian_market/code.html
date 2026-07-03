@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Partnerships | TRUMPY - Gateway to the Indian Consumer Market</title>
+<meta content="TRUMPY offers a one-stop solution for foreign brands and Indian startups to access the premium Indian consumer market through expert brand collaboration." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#ebe8e3",
+                    "on-surface-variant": "#4f453f",
+                    "secondary-fixed-dim": "#ffb59c",
+                    "on-background": "#1c1c19",
+                    "inverse-surface": "#31302d",
+                    "error-container": "#ffdad6",
+                    "surface": "#fdf9f4",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#fbddca",
+                    "outline-variant": "#d2c4bc",
+                    "on-primary-fixed-variant": "#574335",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb68c",
+                    "surface-dim": "#ddd9d5",
+                    "on-secondary-container": "#5d1900",
+                    "tertiary-fixed": "#ffdbc9",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#390c00",
+                    "secondary": "#ab3600",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e6e2dd",
+                    "on-primary-fixed": "#28180d",
+                    "surface-container": "#f1ede8",
+                    "primary-fixed-dim": "#dec1af",
+                    "secondary-fixed": "#ffdbcf",
+                    "surface-container-highest": "#e6e2dd",
+                    "primary": "#26170c",
+                    "on-tertiary-fixed": "#321200",
+                    "inverse-primary": "#dec1af",
+                    "tertiary-container": "#502100",
+                    "on-surface": "#1c1c19",
+                    "surface-tint": "#705a4c",
+                    "surface-bright": "#fdf9f4",
+                    "on-secondary-fixed-variant": "#822700",
+                    "on-tertiary-fixed-variant": "#753401",
+                    "primary-container": "#3d2b1f",
+                    "outline": "#81756e",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "background": "#fdf9f4",
+                    "secondary-container": "#fd6b34",
+                    "on-primary-container": "#ac9181",
+                    "on-tertiary-container": "#d7814b",
+                    "surface-container-low": "#f7f3ee",
+                    "tertiary": "#301100",
+                    "inverse-on-surface": "#f4f0eb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "headline-md": ["Playfair Display"],
+                    "label-caps": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(253, 107, 52, 0.05), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(38, 23, 12, 0.03), transparent 40%);
+        }
+        .luxury-underline {
+            position: relative;
+        }
+        .luxury-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #d2c4bc;
+            transition: background 0.3s ease;
+        }
+        .luxury-input:focus + .luxury-underline::after {
+            background: #ab3600;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<div class="grain-overlay"></div>
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm font-bold text-primary dark:text-primary-fixed uppercase tracking-tighter" href="#">TRUMPY</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Services</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Brand Story</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Partnership</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:opacity-80 transition-opacity">
+                Order Reserve
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden hero-gradient">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full py-20 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 leading-tight">
+                        Your Gateway to the <br/>
+<span class="italic text-secondary">Indian Market</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12">
+                        TRUMPY provides an artisanal, one-stop ecosystem for foreign heritage brands and ambitious Indian startups to scale, collaborate, and conquer the world's most dynamic consumer landscape.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<a class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:opacity-90 transition-all" href="#inquiry">Start Collaboration</a>
+<a class="border border-primary text-primary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all" href="#usp">Explore Solutions</a>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-[4/5] relative overflow-hidden shadow-2xl">
+<img class="object-cover w-full h-full" data-alt="A high-end editorial photograph of a luxury Indian interior featuring traditional architectural elements like carved stone and deep espresso wood furniture. Warm sunlight filters through a lattice screen, casting intricate shadows. A single premium beverage bottle sits on a marble table, representing the sophisticated Indian consumer market and artisanal excellence. The mood is opulent, quiet, and authoritative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8dg9RpA8XMBtrTo5mST5eFA_tPqIvfwUEy-EF6uPUZe8GRTyXefbhSPDHABqbCprq0lWl96Zl4KFvQzoWNYZRaBmK63GoJEphYNMx3fiusfoLpRvv7XWFMs8nzBwiUErXmBXVg4KRPU7hHNbSnmpG9yCtSXZJRK1k3wMYM2tcbKkQvmlhYW6ToxJMmUo9mojHbc6-c-1EhKr2l-VDWF2bKHds6wxZY8J6DDV0XEZCNXd5Y6Pw1MbbCWIi63Sbuw35r4JN_RVcLw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- USP Highlights -->
+<section class="py-24 bg-surface-container-low border-y border-outline-variant/20" id="usp">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-secondary mb-4 block">Strategic Advantage</span>
+<h2 class="font-headline-md text-headline-md text-primary">Why Partner with TRUMPY?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- USP 1 -->
+<div class="p-10 bg-surface border border-outline-variant/30 hover:shadow-xl transition-all duration-500 group">
+<div class="w-12 h-12 flex items-center justify-center bg-tertiary-fixed text-on-tertiary-fixed-variant mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">One Stop Solution</h3>
+<p class="font-body-md text-on-surface-variant">From regulatory compliance and warehousing to high-end retail placement, we manage the entire value chain for your brand.</p>
+</div>
+<!-- USP 2 -->
+<div class="p-10 bg-surface border border-outline-variant/30 hover:shadow-xl transition-all duration-500 group">
+<div class="w-12 h-12 flex items-center justify-center bg-tertiary-fixed text-on-tertiary-fixed-variant mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Market Access</h3>
+<p class="font-body-md text-on-surface-variant">Instant entry into tier-1 luxury segments and high-growth consumer clusters across India through our established networks.</p>
+</div>
+<!-- USP 3 -->
+<div class="p-10 bg-surface border border-outline-variant/30 hover:shadow-xl transition-all duration-500 group">
+<div class="w-12 h-12 flex items-center justify-center bg-tertiary-fixed text-on-tertiary-fixed-variant mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Brand Collaboration</h3>
+<p class="font-body-md text-on-surface-variant">Synergistic partnerships between heritage global brands and modern Indian craftsmanship to create unique market propositions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Form Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="inquiry">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<!-- Inquiry Details -->
+<div>
+<h2 class="font-display-lg text-headline-md md:text-headline-md text-primary mb-6">Let's craft the future of commerce together.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Whether you are a global brand looking for a foothold in India or a local startup ready for the next level, our team is ready to assist.
+                    </p>
+<div class="space-y-8 mb-12">
+<div class="flex items-start gap-6">
+<div class="p-4 bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-1">Email us</p>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors" href="mailto:connect@trumpy.in">connect@trumpy.in</a>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="p-4 bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined text-secondary">chat</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-1">WhatsApp</p>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors" href="https://wa.me/917600467134">+91 76004 67134</a>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="p-4 bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined text-secondary">groups</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-1">Follow our journey</p>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors" href="https://instagram.com/trumpy.in" target="_blank">@trumpy.in</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Inquiry Form -->
+<div class="bg-surface-container p-10 md:p-16 relative">
+<h3 class="font-headline-sm text-headline-sm mb-12 text-center uppercase tracking-widest">Partnership Inquiry</h3>
+<form class="space-y-10" id="partnershipForm">
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-2 group-focus-within:text-secondary transition-colors">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-secondary luxury-input font-body-md text-on-surface" placeholder="e.g. Julian Varma" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-2 group-focus-within:text-secondary transition-colors">Organization</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-secondary luxury-input font-body-md text-on-surface" placeholder="Company Name" required="" type="text"/>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-2 group-focus-within:text-secondary transition-colors">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-secondary luxury-input font-body-md text-on-surface" placeholder="email@domain.com" required="" type="email"/>
+</div>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-2 group-focus-within:text-secondary transition-colors">Nature of Partnership</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-secondary luxury-input font-body-md text-on-surface appearance-none">
+<option>Foreign Brand Expansion</option>
+<option>Indian Startup Acceleration</option>
+<option>Retail Distribution</option>
+<option>Investment &amp; Collaboration</option>
+</select>
+</div>
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-2 group-focus-within:text-secondary transition-colors">Brief Overview</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 focus:ring-0 focus:border-secondary luxury-input font-body-md text-on-surface resize-none" placeholder="How can we help you access the Indian consumer market?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-6 font-label-caps text-label-caps uppercase tracking-[0.3em] hover:bg-secondary transition-all duration-500 shadow-lg" type="submit">
+                            Request Consultation
+                        </button>
+</form>
+<!-- Form Success Message (Hidden by default) -->
+<div class="hidden absolute inset-0 bg-surface-container flex flex-col items-center justify-center text-center p-10 z-10" id="successMessage">
+<span class="material-symbols-outlined text-secondary text-6xl mb-6">check_circle</span>
+<h4 class="font-headline-md text-headline-md mb-4">Inquiry Received</h4>
+<p class="font-body-md text-on-surface-variant">A partnership specialist will reach out to you within 24 business hours.</p>
+<button class="mt-8 text-secondary font-label-caps text-label-caps underline uppercase tracking-widest" onclick="location.reload()">Send another message</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-on-surface w-full pt-20 pb-10 mt-20 border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
+<div class="md:col-span-4">
+<a class="font-display-lg text-headline-md text-on-primary dark:text-primary-fixed uppercase tracking-tighter mb-6 block" href="#">TRUMPY</a>
+<p class="font-body-md text-on-primary/70 mb-8 max-w-xs">
+                    Pioneering the "By India, From India, To World" movement in artisanal food and beverage excellence.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center border border-on-primary/20 rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest mb-6">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Home</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Services</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Brand Story</a></li>
+<li><a class="text-secondary-fixed font-body-md" href="#">Partnership</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Terms of Service</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Compliance</a></li>
+<li><a class="text-on-primary/70 hover:text-on-primary transition-colors font-body-md" href="#">Disclaimer</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest mb-6">Newsletter</h4>
+<p class="font-body-md text-on-primary/70 mb-6">Stay updated with market insights and new launches.</p>
+<div class="flex">
+<input class="bg-surface-container-lowest/10 border border-on-primary/20 px-4 py-3 w-full focus:outline-none focus:border-secondary text-on-primary" placeholder="Your email" type="email"/>
+<button class="bg-secondary text-on-primary px-6 hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-on-primary/10 text-center md:text-left">
+<p class="font-body-md text-on-primary/50 text-sm">
+                © 2024 TRUMPY FOOD AND BEVERAGES PRIVATE LIMITED. All rights reserved.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interactions and Form Handling
+        document.getElementById('partnershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('successMessage');
+            successMsg.classList.remove('hidden');
+            successMsg.classList.add('flex');
+            
+            // Log form data if needed (simulated)
+            console.log('Form submitted successfully');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-1', 'shadow-md');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('py-1', 'shadow-md');
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+            }
+        });
+    </script>
+</body></html>
