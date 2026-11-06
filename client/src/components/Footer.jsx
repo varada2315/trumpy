@@ -26,13 +26,20 @@ export default function Footer() {
             "By India, From India, To World."
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 flex items-center justify-center border border-on-primary/20 rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all text-on-primary/60 hover:text-on-primary" aria-label="Social Link">
+            <a 
+              href="https://www.linkedin.com/company/trumpy-food-beverages-private-limited/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center border border-on-primary/20 rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all text-on-primary/60 hover:text-on-primary" 
+              aria-label="TRUMPY LinkedIn"
+              title="TRUMPY on LinkedIn"
+            >
               <span className="material-symbols-outlined text-lg">public</span>
             </a>
             <a href="#" className="w-10 h-10 flex items-center justify-center border border-on-primary/20 rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all text-on-primary/60 hover:text-on-primary" aria-label="Share Link">
               <span className="material-symbols-outlined text-lg">share</span>
             </a>
-            <a href="mailto:connect@trumpy.in" className="w-10 h-10 flex items-center justify-center border border-on-primary/20 rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all text-on-primary/60 hover:text-on-primary" aria-label="Email Link">
+            <a href="mailto:connect@trumpy.in?subject=Hi%20Trumpy&body=Hi%20Trumpy," className="w-10 h-10 flex items-center justify-center border border-on-primary/20 rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all text-on-primary/60 hover:text-on-primary" aria-label="Email Link">
               <span className="material-symbols-outlined text-lg">mail</span>
             </a>
           </div>
@@ -116,8 +123,20 @@ export default function Footer() {
 
       {/* Copyright & Legal Links */}
       <div className="mt-20 border-t border-outline-variant/20 pt-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="font-body-md text-xs text-on-primary/50 text-center md:text-left">
-          © 2026 TRUMPY FOOD AND BEVERAGES PRIVATE LIMITED. All rights reserved.
+        <div className="font-body-md text-xs text-on-primary/50 text-center md:text-left flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+          <span>© 2026 TRUMPY FOOD AND BEVERAGES PRIVATE LIMITED. All rights reserved.</span>
+          <span className="hidden sm:inline text-on-primary/30">•</span>
+          <span>
+            Built by{' '}
+            <a 
+              href="https://growitate.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-on-primary/80 hover:text-secondary-fixed underline decoration-on-primary/30 hover:decoration-secondary-fixed transition-colors font-medium"
+            >
+              Growitate
+            </a>
+          </span>
         </div>
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           <a href="#" className="text-on-primary/50 hover:text-on-primary transition-colors text-xs uppercase tracking-widest">
