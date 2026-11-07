@@ -435,13 +435,13 @@ export default function Home() {
                   <span>www.axtadvisory.com</span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/trumpy-food-beverages-private-limited/"
+                  href="https://www.linkedin.com/in/abhishek-thakur-5719a0164?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-on-surface-variant hover:text-secondary transition-colors"
                 >
                   <span className="material-symbols-outlined text-base text-secondary">open_in_new</span>
-                  <span>TRUMPY on LinkedIn</span>
+                  <span>Connect on LinkedIn</span>
                 </a>
               </div>
             </motion.div>
